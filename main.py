@@ -359,16 +359,16 @@ def send_discord_notification(game: Dict) -> bool:
     # Build the Discord embed payload
     embed_data = {
         "title": f"{game['title']} (Epic Games) Giveaway",
-        "description": f"**[🎮 Claim Now]({game['url']})**",
+        "description": f"**[🎮 Забрать]({game['url']})**",
         "color": 0x0078F2,  # Epic Games blue color
         "fields": [
             {
-                "name": "Price",
+                "name": "Цена",
                 "value": game['original_price'],
                 "inline": True
             },
             {
-                "name": "Free until",
+                "name": "Бесплатно до",
                 "value": expiration_text,
                 "inline": True
             }
