@@ -196,7 +196,7 @@ def _extract_game_data(game: Dict) -> Optional[Dict]:
             logger.warning(f"Could not determine product slug for '{title}'")
             return None
         
-        url = f"https://store.epicgames.com/en-US/p/{product_slug}"
+        url = f"https://store.epicgames.com/ru/p/{product_slug}"
         
         image = ""
         if game.get("keyImages"):
