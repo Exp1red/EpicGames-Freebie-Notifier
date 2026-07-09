@@ -2,7 +2,7 @@ name: Epic Games to Discord Notifier
 
 on:
   schedule:
-    - cron: '5 16 * * *'  # Runs every day at 10:05 PM Bangladesh time
+    - cron: '30 15 * * *'  # Runs every day at 21:30 Novosibirsk
   workflow_dispatch:  # Allows manual trigger from Actions tab
 
 permissions:
